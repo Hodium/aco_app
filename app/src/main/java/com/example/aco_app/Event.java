@@ -1,7 +1,5 @@
 package com.example.aco_app;
 
-import java.util.Date;
-
 public class Event {
 
     public String name;

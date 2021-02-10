@@ -8,14 +8,14 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:textStyle="bold"
-        android:textSize="14dp"/>
+        android:textSize="14sp"/>
 
     <TextView
         android:id="@+id/event_date"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@+id/event_name"
-        android:textSize="12dp"
+        android:textSize="12sp"
         android:textColor="@android:color/darker_gray"/>
 
     <TextView
@@ -23,13 +23,13 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@+id/event_date"
-        android:textSize="12dp"/>
+        android:textSize="12sp"/>
 
     <TextView
         android:id="@+id/event_location"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@+id/event_choirs"
-        android:textSize="13dp"/>
+        android:textSize="13sp"/>
 
 </RelativeLayout>
