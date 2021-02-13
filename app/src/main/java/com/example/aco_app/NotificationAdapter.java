@@ -22,22 +22,22 @@ public class NotificationAdapter extends BaseAdapter {
 
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
-        convertView = inflater.inflate(R.layout.event, null);
-//        RelativeLayout notificationBackground = (RelativeLayout) convertView.findViewById(R.id.notification_background);
+        convertView = inflater.inflate(R.layout.notification, null);
+        RelativeLayout notificationBackground = (RelativeLayout) convertView.findViewById(R.id.notification_background);
         TextView notificationName = (TextView) convertView.findViewById(R.id.notification_name);
         TextView notificationDate = (TextView) convertView.findViewById(R.id.notification_date);
         Notification currNotification = notifications[position];
-//        switch (currNotification.type){
-//            case 0:
-//                notificationBackground.setBackgroundColor(0xFF00FF00);
-//                break;
-//            case 1:
-//                notificationBackground.setBackgroundColor(0xFFFF0000);
-//                break;
-//            case 2:
-//                notificationBackground.setBackgroundColor(0xFF0000FF);
-//                break;
-//        }
+        switch (currNotification.type){
+            case 0:
+                notificationBackground.setBackgroundColor(0xFF00FF00);
+                break;
+            case 1:
+                notificationBackground.setBackgroundColor(0xFFFF0000);
+                break;
+            case 2:
+                notificationBackground.setBackgroundColor(0xFF0000FF);
+                break;
+        }
         notificationName.setText(currNotification.name);
         notificationDate.setText(currNotification.date);
         return convertView;

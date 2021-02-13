@@ -31,7 +31,7 @@ public class Home extends AppCompatActivity {
     }
 
     public void notificationsClick(View view) {
-        Intent intent = new Intent(this, Notification.class);
+        Intent intent = new Intent(this, Notifications.class);
         startActivity(intent);
     }
 
